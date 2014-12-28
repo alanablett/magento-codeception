@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Account</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://magento-codeception.aablett/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://magento-codeception.aablett/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://magento-codeception.aablett/js/blank.html';
+    var BLANK_IMG = 'http://magento-codeception.aablett/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript" src="http://magento-codeception.aablett/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/varien/js.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/varien/form.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/varien/weee.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/app.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/skin/frontend/rwd/default/js/minicart.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/frontend/rwd/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/frontend/rwd/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/frontend/rwd/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/frontend/rwd/default/css/madisonisland.css" media="all" />
+<!--<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.magento-codeception.aablett';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script></head>
+<body class=" customer-account-index customer-account">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="global-site-notice demo-notice">
+        <div class="notice-inner"><p>This is a demo store. Any orders placed through this store will not be honored or fulfilled.</p></div>
+    </div>
+    <div class="page">
+        
+<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+            <div class="form-language">
+    <label for="select-language">Your Language:</label>
+    <select id="select-language" title="Your Language" onchange="window.location.href=this.value">
+                    <option value="http://magento-codeception.aablett/customer/account/?___store=default&amp;___from_store=default" selected="selected">English</option>
+                    <option value="http://magento-codeception.aablett/customer/account/?___store=french&amp;___from_store=default">French</option>
+                    <option value="http://magento-codeception.aablett/customer/account/?___store=german&amp;___from_store=default">German</option>
+        </select>
+</div>
+        </div>
+
+        
+        <p class="welcome-msg">Welcome, Jane Doe! </p>
+    </div>
+</div>
+
+<header id="header" class="page-header">
+    <div class="page-header-container">
+        <a class="logo" href="http://magento-codeception.aablett/">
+            <img src="http://magento-codeception.aablett/skin/frontend/base/default/images/media/logo.png" alt="Madison Island" class="large" />
+            <img src="http://magento-codeception.aablett/skin/frontend/base/default/images/media/logo_small.png" alt="Madison Island" class="small" />
+        </a>
+
+                <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+
+        <div class="skip-links">
+            <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label">Menu</span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label">Search</span>
+            </a>
+
+            <a href="#header-account" class="skip-link skip-account">
+                <span class="icon"></span>
+                <span class="label">Account</span>
+            </a>
+
+            <!-- Cart -->
+
+            <div class="header-minicart">
+                
+
+<a href="#header-cart" class="skip-link skip-cart ">
+    <span class="icon"></span>
+    <span class="label">Cart</span>
+    <span class="count">4</span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+
+<div class="minicart-wrapper">
+
+    <p class="block-subtitle">
+        Recently added item(s)        <a class="close skip-link-close" href="#" title="Close">&times;</a>
+    </p>
+
+                    <div>
+            <ul id="cart-sidebar" class="mini-products-list">
+                                    <li class="item" xmlns="http://www.w3.org/1999/html">
+            <a href="http://magento-codeception.aablett/blue-horizons-bracelets.html" title="Blue Horizons Bracelets" class="product-image"><img src="http://magento-codeception.aablett/media/catalog/product/cache/1/thumbnail/50x50/9df78eab33525d08d6e5fb8d27136e95/a/c/acj006_2.jpg" width="50" height="50" alt="Blue Horizons Bracelets" /></a>
+        <div class="product-details">
+        <p class="product-name"><a href="http://magento-codeception.aablett/blue-horizons-bracelets.html">Blue Horizons Bracelets</a></p>
+
+        <table class="info-wrapper">
+            <tbody>
+                <tr>
+                    <th>Price</th>
+                    <td>
+                        
+                                                                                                                                <span class="price">£55.00</span>                                                                                            
+
+
+                            
+                                            </td>
+                </tr>
+                <tr class="qty-wrapper">
+                    <th>Qty</th>
+                    <td>
+                        <input
+                            id="qinput-2355"
+                            data-link="http://magento-codeception.aablett/checkout/cart/ajaxUpdate/id/2355/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/"
+                            data-item-id="2355"
+                            class="qty cart-item-quantity" name=""
+                            value="1"
+                                                        />
+
+                        <button id="qbutton-2355"
+                                data-item-id="2355"
+                                disabled="disabled"
+                                data-update
+                                class="button quantity-button">
+                            ok                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+                <a href="http://magento-codeception.aablett/checkout/cart/configure/id/2355/" title="Edit item" class="btn-edit">
+            Edit item        </a>
+            |
+                            <a href="http://magento-codeception.aablett/checkout/cart/ajaxDelete/id/2355/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/" title="Remove This Item"
+                   data-confirm="Are you sure you would like to remove this item from the shopping cart?"
+                   class="remove">
+                    Remove Item                </a>
+                    
+
+
+        
+    </div>
+</li>
+                                    <li class="item" xmlns="http://www.w3.org/1999/html">
+            <a href="http://magento-codeception.aablett/alice-in-wonderland.html" title="Alice in Wonderland" class="product-image"><img src="http://magento-codeception.aablett/media/catalog/product/cache/1/thumbnail/50x50/9df78eab33525d08d6e5fb8d27136e95/a/l/alice_wonderland_1.jpg" width="50" height="50" alt="Alice in Wonderland" /></a>
+        <div class="product-details">
+        <p class="product-name"><a href="http://magento-codeception.aablett/alice-in-wonderland.html">Alice in Wonderland</a></p>
+
+        <table class="info-wrapper">
+            <tbody>
+                <tr>
+                    <th>Price</th>
+                    <td>
+                        
+                                                                                                                                <span class="price">£5.00</span>                                                                                            
+
+
+                            
+                                            </td>
+                </tr>
+                <tr class="qty-wrapper">
+                    <th>Qty</th>
+                    <td>
+                        <input
+                            id="qinput-2354"
+                            data-link="http://magento-codeception.aablett/checkout/cart/ajaxUpdate/id/2354/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/"
+                            data-item-id="2354"
+                            class="qty cart-item-quantity" name=""
+                            value="1"
+                                                        />
+
+                        <button id="qbutton-2354"
+                                data-item-id="2354"
+                                disabled="disabled"
+                                data-update
+                                class="button quantity-button">
+                            ok                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+                <a href="http://magento-codeception.aablett/checkout/cart/configure/id/2354/" title="Edit item" class="btn-edit">
+            Edit item        </a>
+            |
+                            <a href="http://magento-codeception.aablett/checkout/cart/ajaxDelete/id/2354/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/" title="Remove This Item"
+                   data-confirm="Are you sure you would like to remove this item from the shopping cart?"
+                   class="remove">
+                    Remove Item                </a>
+                    
+
+
+        
+    </div>
+</li>
+                                    <li class="item" xmlns="http://www.w3.org/1999/html">
+            <a href="http://magento-codeception.aablett/barclay-d-orsay-pump-nude.html" title="Barclay d'Orsay pump, Nude" class="product-image"><img src="http://magento-codeception.aablett/media/catalog/product/cache/1/thumbnail/50x50/9df78eab33525d08d6e5fb8d27136e95/a/w/aws000a_2.jpg" width="50" height="50" alt="Barclay d'Orsay pump, Nude" /></a>
+        <div class="product-details">
+        <p class="product-name"><a href="http://magento-codeception.aablett/barclay-d-orsay-pump-nude.html">Barclay d'Orsay pump, Nude</a></p>
+
+        <table class="info-wrapper">
+            <tbody>
+                <tr>
+                    <th>Price</th>
+                    <td>
+                        
+                                                                                                                                <span class="price">£390.00</span>                                                                                            
+
+
+                            
+                                            </td>
+                </tr>
+                <tr class="qty-wrapper">
+                    <th>Qty</th>
+                    <td>
+                        <input
+                            id="qinput-2348"
+                            data-link="http://magento-codeception.aablett/checkout/cart/ajaxUpdate/id/2348/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/"
+                            data-item-id="2348"
+                            class="qty cart-item-quantity" name=""
+                            value="2"
+                                                        />
+
+                        <button id="qbutton-2348"
+                                data-item-id="2348"
+                                disabled="disabled"
+                                data-update
+                                class="button quantity-button">
+                            ok                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+                <a href="http://magento-codeception.aablett/checkout/cart/configure/id/2348/" title="Edit item" class="btn-edit">
+            Edit item        </a>
+            |
+                            <a href="http://magento-codeception.aablett/checkout/cart/ajaxDelete/id/2348/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9jdXN0b21lci9hY2NvdW50Lw,,/" title="Remove This Item"
+                   data-confirm="Are you sure you would like to remove this item from the shopping cart?"
+                   class="remove">
+                    Remove Item                </a>
+                    
+
+
+                <div class="truncated">
+          <div class="truncated_full_value">
+            <dl class="item-options">
+                                <dt>Color</dt>
+                <dd>
+                                        Taupe                                    </dd>
+                                <dt>Shoe size</dt>
+                <dd>
+                                        7                                    </dd>
+                            </dl>
+          </div>
+        <a href="#" onclick="return false;" class="details">Details</a>
+        </div>
+        
+    </div>
+</li>
+                            </ul>
+        </div>
+        <script type="text/javascript">
+            decorateList('cart-sidebar', 'none-recursive');
+            $j('document').ready(function() {
+                var minicartOptions  = {
+                    formKey:           "yCNW6iowWaTo0I0c"
+                }
+                var Mini = new Minicart(minicartOptions);
+                Mini.init();
+            });
+        </script>
+
+        <div id="minicart-widgets">
+                    </div>
+        <div class="block-content">
+            <p class="subtotal">
+                                    <span class="label">Cart Subtotal:</span> <span class="price">£840.00</span>                                                </p>
+        </div>
+
+
+                    <div class="minicart-actions">
+                <a class="cart-link" href="http://magento-codeception.aablett/checkout/cart/">
+                    View Shopping Cart                </a>
+                <ul class="checkout-types minicart">
+                                        <li>
+                        <a title="Checkout" class="button checkout-button" href="http://magento-codeception.aablett/checkout/onepage/">
+                            Checkout                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</div>
+            </div>
+
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div id="header-nav" class="skip-content">
+            
+    <nav id="nav">
+        <ol class="nav-primary">
+            <li  class="level0 nav-1 first parent"><a href="http://magento-codeception.aablett/women.html" class="level0 has-children">Women</a><ul class="level0"><li class="level1"><a class="level1" href="http://magento-codeception.aablett/women.html">View All Women</a></li><li  class="level1 nav-1-1 first"><a href="http://magento-codeception.aablett/women/new-arrivals.html" class="level1 ">New Arrivals</a></li><li  class="level1 nav-1-2"><a href="http://magento-codeception.aablett/women/tops-blouses.html" class="level1 ">Tops &amp; Blouses</a></li><li  class="level1 nav-1-3"><a href="http://magento-codeception.aablett/women/pants-denim.html" class="level1 ">Pants &amp; Denim</a></li><li  class="level1 nav-1-4 last"><a href="http://magento-codeception.aablett/women/dresses-skirts.html" class="level1 ">Dresses &amp; Skirts</a></li></ul></li><li  class="level0 nav-2 parent"><a href="http://magento-codeception.aablett/men.html" class="level0 has-children">Men</a><ul class="level0"><li class="level1"><a class="level1" href="http://magento-codeception.aablett/men.html">View All Men</a></li><li  class="level1 nav-2-1 first"><a href="http://magento-codeception.aablett/men/new-arrivals.html" class="level1 ">New Arrivals</a></li><li  class="level1 nav-2-2"><a href="http://magento-codeception.aablett/men/shirts.html" class="level1 ">Shirts</a></li><li  class="level1 nav-2-3"><a href="http://magento-codeception.aablett/men/tees-knits-and-polos.html" class="level1 ">Tees, Knits and Polos</a></li><li  class="level1 nav-2-4"><a href="http://magento-codeception.aablett/men/pants-denim.html" class="level1 ">Pants &amp; Denim</a></li><li  class="level1 nav-2-5 last"><a href="http://magento-codeception.aablett/men/blazers.html" class="level1 ">Blazers</a></li></ul></li><li  class="level0 nav-3 parent"><a href="http://magento-codeception.aablett/accessories.html" class="level0 has-children">Accessories</a><ul class="level0"><li class="level1"><a class="level1" href="http://magento-codeception.aablett/accessories.html">View All Accessories</a></li><li  class="level1 nav-3-1 first"><a href="http://magento-codeception.aablett/accessories/eyewear.html" class="level1 ">Eyewear</a></li><li  class="level1 nav-3-2"><a href="http://magento-codeception.aablett/accessories/jewelry.html" class="level1 ">Jewelry</a></li><li  class="level1 nav-3-3"><a href="http://magento-codeception.aablett/accessories/shoes.html" class="level1 ">Shoes</a></li><li  class="level1 nav-3-4 last"><a href="http://magento-codeception.aablett/accessories/bags-luggage.html" class="level1 ">Bags &amp; Luggage</a></li></ul></li><li  class="level0 nav-4 parent"><a href="http://magento-codeception.aablett/home-decor.html" class="level0 has-children">Home &amp; Decor</a><ul class="level0"><li class="level1"><a class="level1" href="http://magento-codeception.aablett/home-decor.html">View All Home &amp; Decor</a></li><li  class="level1 nav-4-1 first"><a href="http://magento-codeception.aablett/home-decor/books-music.html" class="level1 ">Books &amp; Music</a></li><li  class="level1 nav-4-2"><a href="http://magento-codeception.aablett/home-decor/bed-bath.html" class="level1 ">Bed &amp; Bath</a></li><li  class="level1 nav-4-3"><a href="http://magento-codeception.aablett/home-decor/electronics.html" class="level1 ">Electronics</a></li><li  class="level1 nav-4-4 last"><a href="http://magento-codeception.aablett/home-decor/decorative-accents.html" class="level1 ">Decorative Accents</a></li></ul></li><li  class="level0 nav-5 parent"><a href="http://magento-codeception.aablett/sale.html" class="level0 has-children">Sale</a><ul class="level0"><li class="level1"><a class="level1" href="http://magento-codeception.aablett/sale.html">View All Sale</a></li><li  class="level1 nav-5-1 first"><a href="http://magento-codeception.aablett/sale/women.html" class="level1 ">Women</a></li><li  class="level1 nav-5-2"><a href="http://magento-codeception.aablett/sale/men.html" class="level1 ">Men</a></li><li  class="level1 nav-5-3"><a href="http://magento-codeception.aablett/sale/accessories.html" class="level1 ">Accessories</a></li><li  class="level1 nav-5-4 last"><a href="http://magento-codeception.aablett/sale/home-decor.html" class="level1 ">Home &amp; Decor</a></li></ul></li><li  class="level0 nav-6 last"><a href="http://magento-codeception.aablett/vip.html" class="level0 ">VIP</a></li>        </ol>
+    </nav>
+        </div>
+
+        <!-- Search -->
+
+        <div id="header-search" class="skip-content">
+            
+<form id="search_mini_form" action="http://magento-codeception.aablett/catalogsearch/result/" method="get">
+    <div class="input-box">
+        <label for="search">Search:</label>
+        <input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." />
+        <button type="submit" title="Search" class="button search-button"><span><span>Search</span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('http://magento-codeception.aablett/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+    </script>
+</form>
+        </div>
+
+        <!-- Account -->
+
+        <div id="header-account" class="skip-content">
+            <div class="links">
+        <ul>
+                                    <li class="first" ><a href="http://magento-codeception.aablett/customer/account/" title="My Account" >My Account</a></li>
+                                                <li ><a href="http://magento-codeception.aablett/wishlist/" title="My Wishlist (1 item)" >My Wishlist (1 item)</a></li>
+                                                <li ><a href="http://magento-codeception.aablett/checkout/cart/" title="My Cart (4 items)" class="top-link-cart">My Cart (4 items)</a></li>
+                                                <li ><a href="http://magento-codeception.aablett/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                                <li class=" last" ><a href="http://magento-codeception.aablett/customer/account/logout/" title="Log Out" >Log Out</a></li>
+                        </ul>
+</div>
+        </div>
+
+        <!-- Cart -->
+
+        <!-- <div id="header-cart" class="skip-content">
+            <div class="mini-cart">
+                <div class="menu-wrapper">
+                    <div class="menu cart-menu">
+                        <div class="empty">Your cart is empty.</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</header>
+
+
+        <div class="main-container col2-left-layout">
+            <div class="main">
+                                                                <div class="col-left sidebar col-left-first"><div class="block block-account">
+    <div class="block-title">
+        <strong><span>My Account</span></strong>
+    </div>
+    <div class="block-content">
+        <ul>
+                                                                                                    <li class="current"><a href="http://magento-codeception.aablett/customer/account/"><strong>Account Dashboard</strong></a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/customer/account/edit/">Account Information</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/customer/address/">Address Book</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/sales/order/history/">My Orders</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/sales/billing_agreement/">Billing Agreements</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/sales/recurring_profile/">Recurring Profiles</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/review/customer/">My Product Reviews</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/wishlist/">My Wishlist</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/oauth/customer_token/">My Applications</a></li>
+                                                                                <li><a href="http://magento-codeception.aablett/newsletter/manage/">Newsletter Subscriptions</a></li>
+                                                                                <li class="last"><a href="http://magento-codeception.aablett/downloadable/customer/products/">My Downloadable Products</a></li>
+                                    </ul>
+    </div>
+</div>
+</div>
+                                <div class="col-main">
+                                        <div class="my-account"><div class="dashboard">
+    <div class="page-title">
+        <h1>My Dashboard</h1>
+    </div>
+        <div class="welcome-msg">
+    <p class="hello"><strong>Hello, Jane Doe!</strong></p>
+    <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+</div>
+    <div class="box-account box-recent">
+    <div class="box-head">
+        <h2>Recent Orders</h2>
+        <a href="http://magento-codeception.aablett/sales/order/history/">View All</a>    </div>
+    <table class="data-table orders" id="my-orders-table">
+    <col width="1" />
+    <col width="1" />
+    <col />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+        <thead>
+            <tr>
+                <th class="number">Order #</th>
+                <th class="date">Date</th>
+                <th class="ship">Ship To</th>
+                <th class="total"><span class="nobr">Order Total</span></th>
+                <th class="status">Status</th>
+                <th class="view">&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+                            <tr>
+                    <td class="number">145000004-1</td>
+                    <td class="date"><span class="nobr">04/05/2014</span></td>
+                    <td class="ship">Jane Doe</td>
+                    <td class="total"><span class="price">$975.55</span></td>
+                    <td class="status"><em>Canceled</em></td>
+                    <td class="a-center view">
+                        <span class="nobr">
+                        <a href="http://magento-codeception.aablett/sales/order/view/order_id/194/">View Order</a>
+                                                    <span class="separator">|</span> <a href="http://magento-codeception.aablett/sales/order/reorder/order_id/194/" class="link-reorder">Reorder</a>
+                                                </span>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="number">145000004</td>
+                    <td class="date"><span class="nobr">04/05/2014</span></td>
+                    <td class="ship">Jane Doe</td>
+                    <td class="total"><span class="price">$975.55</span></td>
+                    <td class="status"><em>Canceled</em></td>
+                    <td class="a-center view">
+                        <span class="nobr">
+                        <a href="http://magento-codeception.aablett/sales/order/view/order_id/193/">View Order</a>
+                                                    <span class="separator">|</span> <a href="http://magento-codeception.aablett/sales/order/reorder/order_id/193/" class="link-reorder">Reorder</a>
+                                                </span>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="number">100000202</td>
+                    <td class="date"><span class="nobr">26/05/2013</span></td>
+                    <td class="ship">Jane Doe</td>
+                    <td class="total"><span class="price">$950.20</span></td>
+                    <td class="status"><em>Pending</em></td>
+                    <td class="a-center view">
+                        <span class="nobr">
+                        <a href="http://magento-codeception.aablett/sales/order/view/order_id/183/">View Order</a>
+                                                    <span class="separator">|</span> <a href="http://magento-codeception.aablett/sales/order/reorder/order_id/183/" class="link-reorder">Reorder</a>
+                                                </span>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="number">100000201</td>
+                    <td class="date"><span class="nobr">26/05/2013</span></td>
+                    <td class="ship">Jane Doe</td>
+                    <td class="total"><span class="price">$387.27</span></td>
+                    <td class="status"><em>Pending</em></td>
+                    <td class="a-center view">
+                        <span class="nobr">
+                        <a href="http://magento-codeception.aablett/sales/order/view/order_id/181/">View Order</a>
+                                                    <span class="separator">|</span> <a href="http://magento-codeception.aablett/sales/order/reorder/order_id/181/" class="link-reorder">Reorder</a>
+                                                </span>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="number">100000199</td>
+                    <td class="date"><span class="nobr">25/05/2013</span></td>
+                    <td class="ship">Jane Doe</td>
+                    <td class="total"><span class="price">$453.20</span></td>
+                    <td class="status"><em>Complete</em></td>
+                    <td class="a-center view">
+                        <span class="nobr">
+                        <a href="http://magento-codeception.aablett/sales/order/view/order_id/179/">View Order</a>
+                                                </span>
+                    </td>
+                </tr>
+                    </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('my-orders-table')</script>
+</div>
+    <div class="box-account box-info">
+        <div class="box-head">
+            <h2>Account Information</h2>
+        </div>
+                        <div class="col2-set">
+    <div class="col-1">
+        <div class="box">
+            <div class="box-title">
+                <h3>Contact Information</h3>
+                <a href="http://magento-codeception.aablett/customer/account/edit/">Edit</a>
+            </div>
+            <div class="box-content">
+                <p>
+                    Jane Doe<br />
+                    janedoe@example.com<br />
+                    <a href="http://magento-codeception.aablett/customer/account/edit/changepass/1/">Change Password</a>
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-2">
+        <div class="box">
+            <div class="box-title">
+                <h3>Newsletters</h3>
+                <a href="http://magento-codeception.aablett/newsletter/manage/">Edit</a>
+            </div>
+            <div class="box-content">
+                <p>
+                                            You are currently not subscribed to any newsletter.                                    </p>
+            </div>
+        </div>
+                    </div>
+    </div>
+    </div>
+    <div class="box-account box-info">
+    <div class="box-head">
+        <h2>Address Book</h2>
+        <a href="http://magento-codeception.aablett/customer/address/">Manage Addresses</a>
+    </div>
+    <div class="col2-set">
+        <div class="col-1">
+            <div class="box">
+                <div class="box-title">
+                    <h3>Default Billing Address</h3>
+                    <a href="http://magento-codeception.aablett/customer/address/edit/id/92/">Edit Address</a>
+                </div>
+                <div class="box-content">
+                    <address>Jane Doe<br/>
+
+10441 Jefferson Blvd, Suite 200<br />
+
+
+
+Culver City,  California, 90232<br/>
+United States<br/>
+T: 888-888-8888
+
+</address>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="box">
+                <div class="box-title">
+                    <h3>Default Shipping Address</h3>
+                    <a href="http://magento-codeception.aablett/customer/address/edit/id/92/">Edit Address</a>
+                </div>
+                <div class="box-content">
+                    <address>Jane Doe<br/>
+
+10441 Jefferson Blvd, Suite 200<br />
+
+
+
+Culver City,  California, 90232<br/>
+United States<br/>
+T: 888-888-8888
+
+</address>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="box-account box-reviews">
+    <div class="box-head">
+        <h2>My Recent Reviews</h2>
+        <a href="http://magento-codeception.aablett/review/customer/">View All Reviews</a>
+    </div>
+    <ol id="my_recent_reviews">
+                <li class="item">
+            <span class="number">1</span>
+            <div class="details">
+                <h3 class="product-name"><a href="http://magento-codeception.aablett/review/customer/view/id/55/">Madison Overear Headphones</a></h3>
+                                    <div class="ratings">
+                        <strong>Rating:</strong>
+                        <div class="rating-box">
+                            <div class="rating" style="width:60%;"></div>
+                        </div>
+                    </div>
+                            </div>
+        </li>
+            <li class="item">
+            <span class="number">2</span>
+            <div class="details">
+                <h3 class="product-name"><a href="http://magento-codeception.aablett/review/customer/view/id/54/">Madison Overear Headphones</a></h3>
+                                    <div class="ratings">
+                        <strong>Rating:</strong>
+                        <div class="rating-box">
+                            <div class="rating" style="width:100%;"></div>
+                        </div>
+                    </div>
+                            </div>
+        </li>
+            <li class="item">
+            <span class="number">3</span>
+            <div class="details">
+                <h3 class="product-name"><a href="http://magento-codeception.aablett/review/customer/view/id/53/">Aviator Sunglasses</a></h3>
+                                    <div class="ratings">
+                        <strong>Rating:</strong>
+                        <div class="rating-box">
+                            <div class="rating" style="width:80%;"></div>
+                        </div>
+                    </div>
+                            </div>
+        </li>
+            <li class="item">
+            <span class="number">4</span>
+            <div class="details">
+                <h3 class="product-name"><a href="http://magento-codeception.aablett/review/customer/view/id/52/">Jackie O Round Sunglasses</a></h3>
+                                    <div class="ratings">
+                        <strong>Rating:</strong>
+                        <div class="rating-box">
+                            <div class="rating" style="width:100%;"></div>
+                        </div>
+                    </div>
+                            </div>
+        </li>
+            <li class="item">
+            <span class="number">5</span>
+            <div class="details">
+                <h3 class="product-name"><a href="http://magento-codeception.aablett/review/customer/view/id/51/">Jackie O Round Sunglasses</a></h3>
+                                    <div class="ratings">
+                        <strong>Rating:</strong>
+                        <div class="rating-box">
+                            <div class="rating" style="width:100%;"></div>
+                        </div>
+                    </div>
+                            </div>
+        </li>
+        </ol>
+    <script type="text/javascript">decorateList('my_recent_reviews');</script>
+</div>
+    </div></div>                </div>
+                <div class="col-left sidebar"><div class="block block-list block-compare">
+    <div class="block-title">
+        <strong><span>Compare Products                    </span></strong>
+    </div>
+    <div class="block-content">
+            <p class="empty">You have no items to compare.</p>
+        </div>
+</div>
+<div class="block block-reorder">
+    <div class="block-title">
+        <strong><span>My Orders</span></strong>
+    </div>
+    <form method="post" action="http://magento-codeception.aablett/checkout/cart/addgroup/" id="reorder-validate-detail">
+        <input name="form_key" type="hidden" value="yCNW6iowWaTo0I0c" />
+        <div class="block-content">
+            <p class="block-subtitle">Last Ordered Items</p>
+            <ol id="cart-sidebar-reorder">
+                                        <li class="item">
+                                                                    <input type="checkbox" name="order_items[]" id="reorder-item-593" value="593" title="Add to Cart" class="checkbox validate-one-required-by-name" />
+                        <script type="text/javascript">
+                        //<![CDATA[
+                            $('reorder-item-593').advaiceContainer = 'cart-sidebar-reorder-advice-container';
+                        //]]>
+                        </script>
+                                        <p class="product-name"><a href="http://magento-codeception.aablett/silver-desert-necklace.html">Silver Desert Necklace</a></p>
+                </li>
+                            <li class="item">
+                                                                    <input type="checkbox" name="order_items[]" id="reorder-item-592" value="592" title="Add to Cart" class="checkbox validate-one-required-by-name" />
+                        <script type="text/javascript">
+                        //<![CDATA[
+                            $('reorder-item-592').advaiceContainer = 'cart-sidebar-reorder-advice-container';
+                        //]]>
+                        </script>
+                                        <p class="product-name"><a href="http://magento-codeception.aablett/aviator-sunglasses.html">Aviator Sunglasses</a></p>
+                </li>
+                            <li class="item">
+                                                                    <input type="checkbox" name="order_items[]" id="reorder-item-594" value="594" title="Add to Cart" class="checkbox validate-one-required-by-name" />
+                        <script type="text/javascript">
+                        //<![CDATA[
+                            $('reorder-item-594').advaiceContainer = 'cart-sidebar-reorder-advice-container';
+                        //]]>
+                        </script>
+                                        <p class="product-name"><a href="http://magento-codeception.aablett/barclay-d-orsay-pump-nude.html">Barclay d'Orsay pump, Nude</a></p>
+                </li>
+                        </ol>
+            <script type="text/javascript">decorateList('cart-sidebar-reorder')</script>
+            <div id="cart-sidebar-reorder-advice-container"></div>
+            <div class="actions">
+                                    <button type="submit" title="Add to Cart" class="button btn-cart"><span><span>Add to Cart</span></span></button>
+                                <a href="http://magento-codeception.aablett/customer/account/">View All</a>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    var reorderFormDetail = new VarienForm('reorder-validate-detail');
+//]]>
+</script>
+</div>
+            </div>
+        </div>
+                <div class="footer-container">
+    <div class="footer">
+        <div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span>Newsletter</span></strong>
+    </div>
+    <form action="http://magento-codeception.aablett/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Sign Up for Our Newsletter:</label>
+            </div>
+            <div class="input-box">
+               <input type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" />
+            </div>
+            <div class="actions">
+                <button type="submit" title="Subscribe" class="button"><span><span>Subscribe</span></span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+<div class="links">
+	<div class="block-title">
+		<strong><span>Company</span></strong>
+	</div>
+	<ul>
+		<li><a href="http://magento-codeception.aablett/about-magento-demo-store/">About Us</a></li>
+		<li><a href="http://magento-codeception.aablett/contacts/">Contact Us</a></li>
+		<li><a href="http://magento-codeception.aablett/customer-service/">Customer Service</a></li>
+		<li><a href="http://magento-codeception.aablett/privacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+	</ul>
+</div><div class="links">
+        <div class="block-title"><strong><span>Quick Links</span></strong></div>
+        <ul>
+                                    <li class="first" ><a href="http://magento-codeception.aablett/catalog/seo_sitemap/category/" title="Site Map" >Site Map</a></li>
+                                                <li ><a href="http://magento-codeception.aablett/catalogsearch/term/popular/" title="Search Terms" >Search Terms</a></li>
+                                                <li class=" last" ><a href="http://magento-codeception.aablett/catalogsearch/advanced/" title="Advanced Search" >Advanced Search</a></li>
+                        </ul>
+</div>
+<div class="links">
+        <div class="block-title"><strong><span>Account</span></strong></div>
+        <ul>
+                                    <li class="first" ><a href="http://magento-codeception.aablett/customer/account/" title="My Account" >My Account</a></li>
+                                                                        </ul>
+</div>
+<div class="links social-media">
+	<div class="block-title">
+		<strong><span>Connect With Us</span></strong>
+	</div>
+	<ul>
+		<li><a href="#"><em class="facebook"></em>Facebook</a></li>
+		<li><a href="#"><em class="twitter"></em>Twitter</a></li>
+		<li><a href="#"><em class="youtube"></em>YouTube</a></li>
+		<li><a href="#"><em class="pinterest"></em>Pinterest</a></li>
+		<li class="last"><a href="#"><em class="rss"></em>RSS</a></li>
+	</ul>
+</div>        <address class="copyright">&copy; 2014 Madison Island. All Rights Reserved.</address>
+    </div>
+</div>
+                
+
+    </div>
+</div>
+</body>
+</html>

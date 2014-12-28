@@ -1,0 +1,5 @@
+# Ignore all magento files for the purpose of this demonstration
+/httpdocs
+
+# Ignore vendor stuff, they get installed with composer!
+/vendor

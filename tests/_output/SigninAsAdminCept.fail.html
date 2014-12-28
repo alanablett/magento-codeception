@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Dashboard / Magento Admin</title>
+<link rel="icon" href="http://magento-codeception.aablett/skin/adminhtml/default/default/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://magento-codeception.aablett/skin/adminhtml/default/default/favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript">
+    var BLANK_URL = 'http://magento-codeception.aablett/js/blank.html';
+    var BLANK_IMG = 'http://magento-codeception.aablett/js/spacer.gif';
+    var BASE_URL = 'http://magento-codeception.aablett/index.php/admin/index/index/key/08e02b55a2b8795ace3cda52df49a0a9/';
+    var SKIN_URL = 'http://magento-codeception.aablett/skin/adminhtml/default/default/';
+    var FORM_KEY = 'NjRhUR9jDZE8bZAF';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/boxes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/xmlconnect/boxes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/menu.css" media="screen, projection" />
+<script type="text/javascript" src="http://magento-codeception.aablett/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/prototype/window.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/varien/js.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/hash.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/events.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/loader.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/grid.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/tabs.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/form.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/accordion.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/tools.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/uploader.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/mage/adminhtml/product.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/calendar/calendar-setup.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/iestyles.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/below_ie7.css" media="all" />
+<script type="text/javascript" src="http://magento-codeception.aablett/js/lib/ds-sleight.js" defer></script>
+<script type="text/javascript" src="http://magento-codeception.aablett/js/varien/iehover-fix.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/ie7.css" media="all" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="http://magento-codeception.aablett/skin/adminhtml/default/default/xmlconnect/iestyles.css" media="all" />
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    Fieldset.addToPrefix(6);
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; // full day names
+Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]; // short day names
+Calendar._FD = 0; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; // full month names
+Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the calendar";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu)";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu)";
+Calendar._TT["GO_TODAY"] = "Go Today";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)";
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu)";
+Calendar._TT["SEL_DATE"] = "Select date";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move";
+Calendar._TT["PART_TODAY"] = ' (' + "Today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Display %s first";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Close";
+Calendar._TT["TODAY"] = "Today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%e %b %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%e %B %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = "Time:";
+
+CalendarDateObject._LOCAL_TIMZEONE_OFFSET_SECONDS = 3600;
+CalendarDateObject._SERVER_TIMZEONE_SECONDS = 1419575769;
+
+//]]>
+</script>
+</head>
+
+<body id="html-body" class=" adminhtml-dashboard-index">
+<div class="wrapper">
+        <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>JavaScript seems to be disabled in your browser.</strong></p>
+                <p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+            </div>
+        </div>
+    </noscript>
+    <p class="demo-notice">This is a demo store. Any orders placed through this store will not be honored or fulfilled.</p>
+        <div class="header">
+            <div class="header-top">
+    <a href="http://magento-codeception.aablett/index.php/admin/index/index/key/08e02b55a2b8795ace3cda52df49a0a9/"><img src="http://magento-codeception.aablett/skin/adminhtml/default/default/images/logo.gif" alt="Magento Logo" class="logo"/></a>
+    <div class="header-right">
+        <p class="super">
+            Logged in as alan<span class="separator">|</span>Friday, 26 December 2014<span class="separator">|</span><a href="http://golinks.magento.com/CE15" onclick="this.target='_blank'" class="go-try">Try Magento Go for Free</a><span class="separator">|</span><a href="http://magento-codeception.aablett/index.php/admin/index/logout/key/53d9ed334a091dedb76f329e24b34c03/" class="link-logout">Log Out</a>
+        </p>
+                <fieldset>
+            <legend>Search</legend>
+            <span id="global_search_indicator" class="autocomplete-indicator" style="display: none">
+                <img src="http://magento-codeception.aablett/skin/adminhtml/default/default/images/ajax-loader.gif" alt="Loading..." class="v-middle"/>
+            </span>
+                        <input id="global_search" name="query" type="text" class="input-text" value="Global Record Search" onfocus="if(this.value=='Global Record Search')this.value=''; " onblur="if(this.value=='')this.value='Global Record Search';" />
+            <div id="global_search_autocomplete" class="autocomplete"></div>
+            <script type="text/javascript">
+                new Ajax.Autocompleter(
+                    'global_search',
+                    'global_search_autocomplete',
+                    'http://magento-codeception.aablett/index.php/admin/index/globalSearch/key/07ef871b2190db0451a68abc74eabc38/',
+                    {
+                        paramName:"query",
+                        minChars:2,
+                        indicator:"global_search_indicator",
+                        updateElement:getSelectionId,
+                        evalJSON:'force'
+                    }
+                );
+                function getSelectionId(li) {
+                    location.href = li.getAttribute('url');
+                }
+            </script>
+        </fieldset>
+            </div>
+</div>
+        <div class="clear"></div>
+            
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li  class=" active  level0"> <a href="http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/"   class="active"><span>Dashboard</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_order/index/key/ef60defcad38d97f27ef004903f5c34c/"   class=""><span>Orders</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_invoice/index/key/17e14d4bc6ac1a391793d08b4baa25ac/"   class=""><span>Invoices</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_shipment/index/key/476c7556a46faeeafdabde488c1ec71c/"   class=""><span>Shipments</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_creditmemo/index/key/be82959ff45b7cd6f78103126071d870/"   class=""><span>Credit Memos</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_transactions/index/key/bb9ce536e4bcd887f109eb6fc07ac0e6/"   class=""><span>Transactions</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_recurring_profile/index/key/8402706f5dbba97c2af569c7142c939b/"   class=""><span>Recurring Profiles (beta)</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_billing_agreement/index/key/67f1cee7272f6932c0336a16506f1368/"   class=""><span>Billing Agreements</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/checkout_agreement/index/key/5d0233da9c83a73200e10343b82ce5d5/"   class=""><span>Terms and conditions</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Tax</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/tax_rule/index/key/becb57a5da4185acb2ba14d94d61997f/"   class=""><span>Manage Tax Rules</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/tax_rate/index/key/ec5cc3dfb7d3da48185593af8f617727/"   class=""><span>Manage Tax Zones &amp; Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/tax_rate/importExport/key/f027e9099de004c262c5340801f26600/"   class=""><span>Import / Export Tax Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/tax_class_customer/index/key/9d5c68a2033f88cec09863a39ec48e3b/"   class=""><span>Customer Tax Classes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/tax_class_product/index/key/08af4028b282c9bde8d82e9b92961797/"   class=""><span>Product Tax Classes</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Catalog</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_product/index/key/e670569897e668b617f7c20369971876/"   class=""><span>Manage Products</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_category/index/key/085763d53f90c89696398ed28b19bd05/"   class=""><span>Manage Categories</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Attributes</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_product_attribute/index/key/93af8e5bd363ec85364c84770377eb78/"   class=""><span>Manage Attributes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_product_set/index/key/4f11d4a5c046c76a2d67c93c6e0d8986/"   class=""><span>Manage Attribute Sets</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/urlrewrite/index/key/947399d5e43c63354fc9c23bd7e45738/"   class=""><span>URL Rewrite Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_search/index/key/84402e7315e5ad210fc0475d3498a1ad/"   class=""><span>Search Terms</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews and Ratings</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Customer Reviews</span></a>
+<ul >
+<li  class="  level3"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_product_review/pending/key/52d97e6594f3f7be1d43b8e43072e047/"   class=""><span>Pending Reviews</span></a>
+</li>
+<li  class="  last level3"> <a href="http://magento-codeception.aablett/index.php/admin/catalog_product_review/index/key/f3edde1cf8d6939548ff750456f37c6c/"   class=""><span>All Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/rating/index/key/a637c16024b86aa27db43018ba2bfc17/"   class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/tag/index/key/31d9872ccd36a66ba7b31a0d02e9475e/"   class=""><span>All Tags</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/tag/pending/key/edda4618e81afc9ce7b7913f71cd51e3/"   class=""><span>Pending Tags</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/sitemap/index/key/787e2a8bf70a5ead447e3c203e6d480b/"   class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Mobile</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/mobile/index/key/119624fd49958ea22090f3f501c41759/"   class=""><span>Manage Apps</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/mobile/history/key/f8d87910b0ccf6c0f8126484ec03879e/"   class=""><span>Submission History</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/mobile/template/key/80356e5a515a95125e7b290926a600a9/"   class=""><span>Message Templates</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/mobile/queue/key/def41afd316d67e72e456087564ec728/"   class=""><span>Message Queue</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/admin_application/index/key/28d89e874582423d9e9424f1319ee798/"   class=""><span>Admin Application Settings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/customer/index/key/2f6a31c283d24a2e1c887b6ab028a7ec/"   class=""><span>Manage Customers</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/customer_group/index/key/5820376f5e90ee9de80783a5279eb045/"   class=""><span>Customer Groups</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/customer_online/index/key/6dd174427d4ad583f6e367143bc3b292/"   class=""><span>Online Customers</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Promotions</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/promo_catalog/index/key/60df3b163d05cb2d79aa58c561aa0171/"   class=""><span>Catalog Price Rules</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/promo_quote/index/key/d04c8f80852a8ffa4edcbca3ff560acf/"   class=""><span>Shopping Cart Price Rules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Newsletter</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/newsletter_template/index/key/7b86432e9017a0384ca0359c2fa60c55/"   class=""><span>Newsletter Templates</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/newsletter_queue/index/key/fdf30345116beb25ae6d4971d2a7d915/"   class=""><span>Newsletter Queue</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/newsletter_subscriber/index/key/a4c3129c912343143ea430b765e64ccb/"   class=""><span>Newsletter Subscribers</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/newsletter_problem/index/key/4f7669e57a2e7522cf9990315b111243/"   class=""><span>Newsletter Problem Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>CMS</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/cms_page/index/key/f725b55da4895dc8d4842667c81c9474/"   class=""><span>Pages</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/cms_block/index/key/f1eca9c30d12ecc5746ad20e775c1e6f/"   class=""><span>Static Blocks</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/widget_instance/index/key/ff016489be74e3d866768b73f018231c/"   class=""><span>Widgets</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/poll/index/key/ad5067d5a23962da01cb7ee3f5a2fd78/"   class=""><span>Polls</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Reports</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/sales/key/4c2d023b18ccdbe97c586ed6c37fea85/"   class=""><span>Orders</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/tax/key/132e97498378b0637c5283d1978a3b08/"   class=""><span>Tax</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/invoiced/key/5cfbb6abfa8702bf681e14c162aa1bed/"   class=""><span>Invoiced</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/shipping/key/26fcd14335fc34823978d5674f417929/"   class=""><span>Shipping</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/refunded/key/d8cf360194f5a7f76ecacdd5696aab56/"   class=""><span>Refunds</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/coupons/key/286deb4102c13e635f3c7f084732692a/"   class=""><span>Coupons</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/paypal_reports/index/key/bf1df316d29152274948f5e22f307c4d/"   class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Shopping Cart</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_shopcart/product/key/ff7b74ece541a36bb330eed471aa1efa/"   class=""><span>Products in carts</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_shopcart/abandoned/key/74f6467c9267787874a4ab6ff466c797/"   class=""><span>Abandoned carts</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Products</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_sales/bestsellers/key/154d3c2ad759d395f5cded32e40ea174/"   class=""><span>Bestsellers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_product/sold/key/68a9987186bd94ffa3484c8216d3c558/"   class=""><span>Products Ordered</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_product/viewed/key/067937962d5718bbd37930e07ae4ce85/"   class=""><span>Most Viewed</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_product/lowstock/key/16b7b098fadb21650489956ef836a7f3/"   class=""><span>Low stock</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_product/downloads/key/49ef9938a22df39a9d548e4cf305910f/"   class=""><span>Downloads</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_customer/accounts/key/7f4669cedfa05300d8268cbfba300eaf/"   class=""><span>New Accounts</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_customer/totals/key/c7097fd9874e165ca87a8d2b8590f489/"   class=""><span>Customers by orders total</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_customer/orders/key/f14d0258bef2da044f4b76907e9b8ec9/"   class=""><span>Customers by number of orders</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_tag/customer/key/6422cc48a01eab154452df22f27fce3a/"   class=""><span>Customers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_tag/product/key/594977aaf6f58f1ec3c78ae281b6a148/"   class=""><span>Products</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_tag/popular/key/8a68e9f2ef719897a91ff91dcbec9ea0/"   class=""><span>Popular</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_review/customer/key/b2fc5e825a50a549a8322dbd4f29f928/"   class=""><span>Customers Reviews</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/report_review/product/key/e1598f209af0f7a4a6b87a012e1dde54/"   class=""><span>Products Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/report/search/key/c0f0dae9de0a9d3e71b5e4f1bfeaa9cf/"   class=""><span>Search Terms</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/report_statistics/index/key/12fd34e423097544f0e1c42e6cc3d67b/"   class=""><span>Refresh Statistics</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>System</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_account/index/key/e5013e76557db1fe705ab2ec29246fa3/"   class=""><span>My Account</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/notification/index/key/55073f6f0d3927002fd2adc121a2ae90/"   class=""><span>Notifications</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tools</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/system_backup/index/key/3ceb6bd7ead0f146fa08af6505c96afb/"   class=""><span>Backups</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/compiler_process/index/key/0239e9bc7e7df16295e91c4467e9cee2/"   class=""><span>Compilation</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Web Services</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/api_user/index/key/d20b71ada247bf47a4d95d44b829f680/"   class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/api_role/index/key/9366e6c0d0df7376a3a4f7c28bf712f2/"   class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/api2_role/index/key/df9a66b321d37078394e14acbacacd00/"   class=""><span>REST - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/api2_attribute/index/key/d8e97b3e600a38639472f7a7858b540b/"   class=""><span>REST - Attributes</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/oauth_consumer/index/key/59486dae95184e88714b058bffa78892/"   class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/oauth_authorizedTokens/index/key/7ac777dcc45aa5f78dc6493ac279f98a/"   class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/oauth_admin_token/index/key/71204513a06d67cc727a91b6fe054c73/"   class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_design/index/key/85fda02796412f2fb928a789b3b239b5/"   class=""><span>Design</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Import/Export</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/import/index/key/0e197593f48c4341d2650462f8597233/"   class=""><span>Import</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/export/index/key/20d6c3762be71c608859e5e2a091a543/"   class=""><span>Export</span></a>
+</li>
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/system_convert_gui/index/key/45aeec5fe7811038f41d6f7bf32bae70/"   class=""><span>Dataflow - Profiles</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/system_convert_profile/index/key/79b992ed445a08430cc47aed1b55d10d/"   class=""><span>Dataflow - Advanced Profiles</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_currency/index/key/e2b86cdba01811073727f01c58c460fe/"   class=""><span>Manage Currency</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/system_currency/index/key/e2b86cdba01811073727f01c58c460fe/"   class=""><span>Rates</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/system_currencysymbol/index/key/4530f78c9bb09e873f7b05e30baa933a/"   class=""><span>Symbols</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_email_template/index/key/dc934ad75fb079d40a2a35b27c70cb74/"   class=""><span>Transactional Emails</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_variable/index/key/fa4d7c8e1d5063e5472070595c9b97b6/"   class=""><span>Custom Variables</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Permissions</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/permissions_user/index/key/530a4df5ffa883676a387543662ae748/"   class=""><span>Users</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/permissions_role/index/key/8689619c6573112a67e359db52322978/"   class=""><span>Roles</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Magento Connect</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magento-codeception.aablett/index.php/admin/extension_local/index/key/73c8094fb33c679116454cb3bc080628/"   class=""><span>Magento Connect Manager</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magento-codeception.aablett/index.php/admin/extension_custom/index/key/f5bef65f3ca5dc264286109d8f768001/"   class=""><span>Package Extensions</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/cache/index/key/12d3f2bf910f6a6790987a77ea56cc7c/"   class=""><span>Cache Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/process/list/key/459bc917e5722a95e946780cda1dff4c/"   class=""><span>Index Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_store/index/key/83d253893d735b4cb27c626b57e02ccd/"   class=""><span>Manage Stores</span></a>
+</li>
+<li  class="  level1"> <a href="http://magento-codeception.aablett/index.php/admin/sales_order_status/index/key/43fbef096cd86a4b03d1b81c63ae17a3/"   class=""><span>Order Statuses</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magento-codeception.aablett/index.php/admin/system_config/index/key/344035ac56ec22e218c645aaf70e5607/"   class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/en_GB/Mage_Adminhtml/dashboard/index/">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>
+        </div>
+        <div class="notification-global">
+        
+    <span class="f-right">
+                You have <span class="critical"><strong>1</strong> critical</span>, <strong>5</strong> major, <strong>19</strong> minor and <strong>140</strong> notice unread message(s). <a href="http://magento-codeception.aablett/index.php/admin/notification/index/key/55073f6f0d3927002fd2adc121a2ae90/">Go to notifications</a>
+    </span>
+            <strong class="label clickable" onclick="openMessagePopup()">
+    
+    Latest Message:</strong> Reminder: Change Magento`s default phone numbers and callouts before site launch    </div>
+<script type="text/javascript">
+//<![CDATA[
+    var messagePopupClosed = false;
+    function openMessagePopup() {
+        var height = $('html-body').getHeight();
+        $('message-popup-window-mask').setStyle({'height':height+'px'});
+        toggleSelectsUnderBlock($('message-popup-window-mask'), false);
+        Element.show('message-popup-window-mask');
+        $('message-popup-window').addClassName('show');
+    }
+
+    function closeMessagePopup() {
+        toggleSelectsUnderBlock($('message-popup-window-mask'), true);
+        Element.hide('message-popup-window-mask');
+        $('message-popup-window').removeClassName('show');
+        messagePopupClosed = true;
+    }
+
+    Event.observe(window, 'load', openMessagePopup);
+    Event.observe(window, 'keyup', function(evt) {
+        if(messagePopupClosed) return;
+        var code;
+        if (evt.keyCode) code = evt.keyCode;
+        else if (evt.which) code = evt.which;
+        if (code == Event.KEY_ESC) {
+            closeMessagePopup();
+        }
+    });
+//]]>
+</script>
+<div id="message-popup-window-mask" style="display:none;"></div>
+<div id="message-popup-window" class="message-popup">
+    <div class="message-popup-head">
+        <a href="#" onclick="closeMessagePopup(); return false;" title="close"><span>close</span></a>
+        <h2>Incoming Message</h2>
+    </div>
+    <div class="message-popup-content">
+        <div class="message">
+            <span class="message-icon message-notice" style="background-image:url(http://widgets.magentocommerce.com/1.9.0.1/SEVERITY_NOTICE.gif);">notice</span>
+            <p class="message-text">Reminder: Change Magento`s default phone numbers and callouts before site launch</p>
+        </div>
+        <p class="read-more"><a href="" onclick="this.target='_blank';">Read details</a></p>
+    </div>
+</div>
+
+
+
+
+        <div class="middle" id="anchor-content">
+            <div id="page:main-container">
+                            <div id="messages"></div>
+                
+<script type="text/javascript">
+//<![CDATA[
+function changeDiagramsPeriod(periodObj) {
+    periodParam = periodObj.value ? 'period/' + periodObj.value + '/' : '';
+    ajaxBlockParam = 'block/tab_orders/';
+    ajaxBlockUrl = 'http://magento-codeception.aablett/index.php/admin/dashboard/ajaxBlock/key/48fb035afb884a982a92ad5910bcb8e8/' + ajaxBlockParam + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'diagram_tab_orders_content';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).update(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).update(transport.responseText);
+            }
+        }
+    });
+    ajaxBlockParam = 'block/tab_amounts/';
+    ajaxBlockUrl = 'http://magento-codeception.aablett/index.php/admin/dashboard/ajaxBlock/key/48fb035afb884a982a92ad5910bcb8e8/' + ajaxBlockParam + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'diagram_tab_amounts_content';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).update(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).update(transport.responseText);
+            }
+        }
+    });
+    ajaxBlockUrl = 'http://magento-codeception.aablett/index.php/admin/dashboard/ajaxBlock/block/totals/key/48fb035afb884a982a92ad5910bcb8e8/' + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'dashboard_diagram_totals';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).replace(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).replace(transport.responseText);
+            }
+        }
+    });
+}
+
+function toggleCal(id) {
+    $('dashboard_'+id+'_cal_div').toggle();
+    $('dashboard_'+id+'_range_div').toggle();
+}
+//]]>
+</script>
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td><h3 class="head-dashboard">Dashboard</h3></td>
+        </tr>
+    </table>
+</div>
+<div class="dashboard-container">
+    <p class="switcher"><label for="store_switcher">Choose Store View:</label>
+<select name="store_switcher" id="store_switcher" onchange="return switchStore(this);">
+    <option value="">All Store Views</option>
+                                                                                                    <optgroup label="Main Website"></optgroup>
+                                                                        <optgroup label="&nbsp;&nbsp;&nbsp;Madison Island">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;English</option>
+                                                            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;French</option>
+                                                            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;German</option>
+                                        </optgroup>
+                        </select>
+<a href="http://www.magentocommerce.com/knowledge-base/entry/understanding-store-scopes" onclick="this.target='_blank'" title="What is this?" class="link-store-scope">What is this?</a></p>
+<script type="text/javascript">
+    function switchStore(obj) {
+        var storeParam = obj.value ? 'store/' + obj.value + '/' : '';
+        if (obj.switchParams) {
+            storeParam += obj.switchParams;
+        }
+            setLocation('http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/' + storeParam);
+        }
+</script>
+    <table cellspacing="25" width="100%">
+        <tr>
+            <td>                        <div class="entry-edit">
+                <div class="entry-edit-head"><h4>Lifetime Sales</h4></div>
+                <fieldset class="a-center bold">
+                    <span class="nowrap" style="font-size:18px;"><span class="price">£39,763.08</span><span style="font-size:14px; color:#686868;"></span></span>
+                </fieldset>
+            </div>
+                        <div class="entry-edit">
+                <div class="entry-edit-head"><h4>Average Orders</h4></div>
+                <fieldset class="a-center bold">
+                    <span class="nowrap" style="font-size:18px;"><span class="price">£1,988.15</span><span style="font-size:14px; color:#686868;"></span></span>
+                </fieldset>
+            </div>
+                            <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Last 5 Orders</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="lastOrdersGrid_table">
+        <col  />
+        <col  width="100" />
+        <col  width="100" />
+                <thead>
+                            <tr class="headings">
+                                    <th  class=" no-link"><span class="nobr">Customer</span></th>
+                                    <th  class=" no-link"><span class="nobr">Items</span></th>
+                                    <th  class=" no-link last"><span class="nobr">Grand Total</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://magento-codeception.aablett/index.php/admin/sales_order/view/order_id/194/key/78fc826c9b143192b323341d53665287/">
+                    <td class=" ">Jane Doe</td>
+                    <td class="a-right a-right ">3</td>
+                    <td class="a-right a-right last">£975.55</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/sales_order/view/order_id/193/key/78fc826c9b143192b323341d53665287/">
+                    <td class=" ">Jane Doe</td>
+                    <td class="a-right a-right ">3</td>
+                    <td class="a-right a-right last">£975.55</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/sales_order/view/order_id/192/key/78fc826c9b143192b323341d53665287/">
+                    <td class=" ">Jay Smith</td>
+                    <td class="a-right a-right ">2</td>
+                    <td class="a-right a-right last">£372.38</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/sales_order/view/order_id/191/key/78fc826c9b143192b323341d53665287/">
+                    <td class=" ">Jay Smith</td>
+                    <td class="a-right a-right ">2</td>
+                    <td class="a-right a-right last">£372.38</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/sales_order/view/order_id/190/key/78fc826c9b143192b323341d53665287/">
+                    <td class=" ">John Doe</td>
+                    <td class="a-right a-right ">5</td>
+                    <td class="a-right a-right last">£595.45</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    lastOrdersGridJsObject = new varienGrid('lastOrdersGrid', 'http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/', 'page', 'sort', 'dir', 'filter');
+    lastOrdersGridJsObject.useAjax = '';
+            lastOrdersGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+                <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Last 5 Search Terms</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="lastSearchGrid_table">
+        <col  />
+        <col  width="100" />
+        <col  width="100" />
+                <thead>
+                            <tr class="headings">
+                                    <th  class=" no-link"><span class="nobr">Search Term</span></th>
+                                    <th  class=" no-link"><span class="nobr">Results</span></th>
+                                    <th  class=" no-link last"><span class="nobr">Number of Uses</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/id/264/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">Camera Travel Set</td>
+                    <td class=" a-right ">22</td>
+                    <td class=" a-right last">1</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/id/265/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">women</td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">1</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/id/266/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">men</td>
+                    <td class=" a-right ">16</td>
+                    <td class=" a-right last">1</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/id/61/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">shirt</td>
+                    <td class=" a-right ">4</td>
+                    <td class=" a-right last">6</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/id/263/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" "><span title="Madison Island VIP Membership - 1 Year">Madison Island VIP Membersh...</span></td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">2</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    lastSearchGridJsObject = new varienGrid('lastSearchGrid', 'http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/', 'page', 'sort', 'dir', 'filter');
+    lastSearchGridJsObject.useAjax = '';
+            lastSearchGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+                <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Top 5 Search Terms</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="topSearchGrid_table">
+        <col  />
+        <col  width="100" />
+        <col  width="100" />
+                <thead>
+                            <tr class="headings">
+                                    <th  class=" no-link"><span class="nobr">Search Term</span></th>
+                                    <th  class=" no-link"><span class="nobr">Results</span></th>
+                                    <th  class=" no-link last"><span class="nobr">Number of Uses</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">nolita</td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">8</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">24&quot; Pearl Strand Necklace</td>
+                    <td class=" a-right ">7</td>
+                    <td class=" a-right last">6</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">shirt</td>
+                    <td class=" a-right ">4</td>
+                    <td class=" a-right last">6</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">Ellis Flat</td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">4</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_search/edit/key/09796c4af4582102b7629edd7e3cf23c/">
+                    <td class=" ">membership</td>
+                    <td class=" a-right ">0</td>
+                    <td class=" a-right last">3</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    topSearchGridJsObject = new varienGrid('topSearchGrid', 'http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/', 'page', 'sort', 'dir', 'filter');
+    topSearchGridJsObject.useAjax = '';
+            topSearchGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+            </td>
+            <td>
+                <div class="entry-edit" style="border:1px solid #ccc;">
+                    <!--  -->
+<ul id="diagram_tab" class="tabs-horiz">
+    <li>
+        <a href="#" id="diagram_tab_orders" title="Orders" class="tab-item-link ">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Orders</span>
+        </a>
+        <div id="diagram_tab_orders_content" style="display:none"><div style="margin:20px;">
+    <p class="switcher a-right" style="padding:5px 10px;">Select Range:
+    <select name="period" id="order_orders_period" onchange="changeDiagramsPeriod(this);">
+                                <option value="24h" >Last 24 Hours</option>
+                                <option value="7d" >Last 7 Days</option>
+                                <option value="1m" >Current Month</option>
+                                <option value="1y" >YTD</option>
+                                <option value="2y" >2YTD</option>
+            </select></p><br/>
+            <p class="a-center" style="width:587px;height:300px; margin:0 auto;">No Data Found</p>
+    </div>
+</div>
+    </li>
+    <li>
+        <a href="#" id="diagram_tab_amounts" title="Amounts" class="tab-item-link ">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Amounts</span>
+        </a>
+        <div id="diagram_tab_amounts_content" style="display:none"><div style="margin:20px;">
+    <p class="switcher a-right" style="padding:5px 10px;">Select Range:
+    <select name="period" id="order_amounts_period" onchange="changeDiagramsPeriod(this);">
+                                <option value="24h" >Last 24 Hours</option>
+                                <option value="7d" >Last 7 Days</option>
+                                <option value="1m" >Current Month</option>
+                                <option value="1y" >YTD</option>
+                                <option value="2y" >2YTD</option>
+            </select></p><br/>
+            <p class="a-center" style="width:587px;height:300px; margin:0 auto;">No Data Found</p>
+    </div>
+</div>
+    </li>
+</ul>
+<script type="text/javascript">
+
+    diagram_tabJsTabs = new varienTabs('diagram_tab', 'diagram_tab_content', 'diagram_tab_orders', []);
+</script>
+                                            <div id="diagram_tab_content"></div>
+                                        <div style="margin:20px;">
+                        <div class="box" id="dashboard_diagram_totals">
+    <div class="entry-edit">
+        <table cellspacing="0" width="100%">
+            <tr>
+                            <td class="a-center bold">
+                    <span>Revenue</span><br />
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">£0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Tax</span><br />
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">£0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Shipping</span><br />
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">£0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Quantity</span><br />
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;">0<span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                        </tr>
+        </table>
+    </div>
+</div>
+                    </div>
+                    <div style="margin:20px;">
+                        <!--  -->
+<ul id="grid_tab" class="tabs-horiz">
+    <li>
+        <a href="#" id="grid_tab_ordered_products" title="Bestsellers" class="tab-item-link ">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Bestsellers</span>
+        </a>
+        <div id="grid_tab_ordered_products_content" style="display:none"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="productsOrderedGrid_table">
+        <col  />
+        <col  width="120" />
+        <col  width="120" />
+                <thead>
+                            <tr class="headings">
+                                    <th  class=" no-link"><span class="nobr">Product Name</span></th>
+                                    <th  class=" no-link"><span class="nobr">Price</span></th>
+                                    <th  class=" no-link last"><span class="nobr">Quantity Ordered</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://magento-codeception.aablett/index.php/admin/catalog_product/edit/id/311/key/151b2daea52f182f182f0a8a8c40bcd1/">
+                    <td class=" ">Convertible Dress</td>
+                    <td class=" a-right ">£340.00</td>
+                    <td class="a-right a-right last">35</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_product/edit/id/285/key/151b2daea52f182f182f0a8a8c40bcd1/">
+                    <td class=" ">Tori Tank</td>
+                    <td class=" a-right ">£60.00</td>
+                    <td class="a-right a-right last">31</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_product/edit/id/240/key/151b2daea52f182f182f0a8a8c40bcd1/">
+                    <td class=" ">Sullivan Sport Coat</td>
+                    <td class=" a-right ">£510.00</td>
+                    <td class="a-right a-right last">25</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_product/edit/id/371/key/151b2daea52f182f182f0a8a8c40bcd1/">
+                    <td class=" ">Florentine Satchel Handbag</td>
+                    <td class=" a-right ">£625.00</td>
+                    <td class="a-right a-right last">20</td>
+                </tr>
+            <tr title="http://magento-codeception.aablett/index.php/admin/catalog_product/edit/id/400/key/151b2daea52f182f182f0a8a8c40bcd1/">
+                    <td class=" ">Compact mp3 Player</td>
+                    <td class=" a-right ">£40.00</td>
+                    <td class="a-right a-right last">20</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    productsOrderedGridJsObject = new varienGrid('productsOrderedGrid', 'http://magento-codeception.aablett/index.php/admin/dashboard/index/key/f861a9278d2a1d4c665384e68354e805/', 'page', 'sort', 'dir', 'filter');
+    productsOrderedGridJsObject.useAjax = '';
+            productsOrderedGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</div>
+    </li>
+    <li>
+        <a href="http://magento-codeception.aablett/index.php/admin/dashboard/productsViewed/key/fa30f7782b39e3cab34e18cc28fd5d3c/" id="grid_tab_reviewed_products" title="Most Viewed Products" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Most Viewed Products</span>
+        </a>
+        <div id="grid_tab_reviewed_products_content" style="display:none"></div>
+    </li>
+    <li>
+        <a href="http://magento-codeception.aablett/index.php/admin/dashboard/customersNewest/key/55eb0a6e4bc2172657a9e9ca5e61f7ae/" id="grid_tab_new_customers" title="New Customers" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>New Customers</span>
+        </a>
+        <div id="grid_tab_new_customers_content" style="display:none"></div>
+    </li>
+    <li>
+        <a href="http://magento-codeception.aablett/index.php/admin/dashboard/customersMost/key/2288743d893f839fb963ca22b0c8a58a/" id="grid_tab_customers" title="Customers" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Customers</span>
+        </a>
+        <div id="grid_tab_customers_content" style="display:none"></div>
+    </li>
+</ul>
+<script type="text/javascript">
+
+    grid_tabJsTabs = new varienTabs('grid_tab', 'grid_tab_content', 'grid_tab_ordered_products', []);
+</script>
+                        <div id="grid_tab_content"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+                        </div>
+        </div>
+        <div class="footer">
+            <p class="bug-report">
+    <a href="http://www.magentocommerce.com/bug-tracking" id="footer_bug_tracking">Help Us Keep Magento Healthy - Report All Bugs</a><br/>
+    Interface Locale: <select name="locale" id="interface_locale" class="" title="Interface Language" style="width:200px"><option value="af_ZA" >Afrikaans (Suid-Afrika) / Afrikaans (South Africa)</option><option value="az_AZ" >Azərbaycanca (Azərbaycan) / Azerbaijani (Azerbaijan)</option><option value="id_ID" >Bahasa Indonesia (Indonesia) / Indonesian (Indonesia)</option><option value="ms_MY" >Bahasa Melayu (Malaysia) / Malay (Malaysia)</option><option value="bs_BA" >Bosanski (Bosna i Hercegovina) / Bosnian (Bosnia and Herzegovina)</option><option value="ca_ES" >Català (Espanya) / Catalan (Spain)</option><option value="cy_GB" >Cymraeg (Prydain Fawr) / Welsh (United Kingdom)</option><option value="da_DK" >Dansk (Danmark) / Danish (Denmark)</option><option value="de_DE" >Deutsch (Deutschland) / German (Germany)</option><option value="de_CH" >Deutsch (Schweiz) / German (Switzerland)</option><option value="de_AT" >Deutsch (Österreich) / German (Austria)</option><option value="et_EE" >Eesti (Eesti) / Estonian (Estonia)</option><option value="en_AU" >English (Australia) / English (Australia)</option><option value="en_CA" >English (Canada) / English (Canada)</option><option value="en_IE" >English (Ireland) / English (Ireland)</option><option value="en_NZ" >English (New Zealand) / English (New Zealand)</option><option value="en_GB" selected="selected" >English (United Kingdom) / English (United Kingdom)</option><option value="en_US" >English (United States) / English (United States)</option><option value="es_AR" >Español (Argentina) / Spanish (Argentina)</option><option value="es_CL" >Español (Chile) / Spanish (Chile)</option><option value="es_CO" >Español (Colombia) / Spanish (Colombia)</option><option value="es_CR" >Español (Costa Rica) / Spanish (Costa Rica)</option><option value="es_ES" >Español (España) / Spanish (Spain)</option><option value="es_MX" >Español (México) / Spanish (Mexico)</option><option value="es_PA" >Español (Panamá) / Spanish (Panama)</option><option value="es_PE" >Español (Perú) / Spanish (Peru)</option><option value="es_VE" >Español (Venezuela) / Spanish (Venezuela)</option><option value="fil_PH" >Filipino (Pilipinas) / Filipino (Philippines)</option><option value="fr_CA" >Français (Canada) / French (Canada)</option><option value="fr_FR" >Français (France) / French (France)</option><option value="gl_ES" >Galego (España) / Galician (Spain)</option><option value="hr_HR" >Hrvatski (Hrvatska) / Croatian (Croatia)</option><option value="it_IT" >Italiano (Italia) / Italian (Italy)</option><option value="it_CH" >Italiano (Svizzera) / Italian (Switzerland)</option><option value="sw_KE" >Kiswahili (Kenya) / Swahili (Kenya)</option><option value="lv_LV" >Latviešu (Latvija) / Latvian (Latvia)</option><option value="lt_LT" >Lietuvių (Lietuva) / Lithuanian (Lithuania)</option><option value="hu_HU" >Magyar (Magyarország) / Hungarian (Hungary)</option><option value="nl_NL" >Nederlands (Nederland) / Dutch (Netherlands)</option><option value="nb_NO" >Norsk Bokmål (Norge) / Norwegian Bokmål (Norway)</option><option value="nn_NO" >Nynorsk (Noreg) / Norwegian Nynorsk (Norway)</option><option value="pl_PL" >Polski (Polska) / Polish (Poland)</option><option value="pt_BR" >Português (Brasil) / Portuguese (Brazil)</option><option value="pt_PT" >Português (Portugal) / Portuguese (Portugal)</option><option value="ro_RO" >Română (România) / Romanian (Romania)</option><option value="sq_AL" >Shqipe (Shqipëria) / Albanian (Albania)</option><option value="sk_SK" >Slovenčina (Slovenská republika) / Slovak (Slovakia)</option><option value="sl_SI" >Slovenščina (Slovenija) / Slovenian (Slovenia)</option><option value="fi_FI" >Suomi (Suomi) / Finnish (Finland)</option><option value="sv_SE" >Svenska (Sverige) / Swedish (Sweden)</option><option value="vi_VN" >Tiếng Việt (Việt Nam) / Vietnamese (Vietnam)</option><option value="tr_TR" >Türkçe (Türkiye) / Turkish (Turkey)</option><option value="is_IS" >íslenska (Ísland) / Icelandic (Iceland)</option><option value="cs_CZ" >čeština (Česká republika) / Czech (Czech Republic)</option><option value="el_GR" >Ελληνικά (Ελλάδα) / Greek (Greece)</option><option value="sr_RS" >Српски (Србија) / Serbian (Serbia)</option><option value="be_BY" >беларуская (Беларусь) / Belarusian (Belarus)</option><option value="bg_BG" >български (България) / Bulgarian (Bulgaria)</option><option value="mk_MK" >македонски (Македонија) / Macedonian (Macedonia)</option><option value="mn_MN" >монгол (Монгол улс) / Mongolian (Mongolia)</option><option value="ru_RU" >русский (Россия) / Russian (Russia)</option><option value="uk_UA" >українська (Україна) / Ukrainian (Ukraine)</option><option value="he_IL" >עברית (ישראל) / Hebrew (Israel)</option><option value="ar_DZ" >العربية (الجزائر) / Arabic (Algeria)</option><option value="ar_KW" >العربية (الكويت) / Arabic (Kuwait)</option><option value="ar_MA" >العربية (المغرب) / Arabic (Morocco)</option><option value="ar_SA" >العربية (المملكة العربية السعودية) / Arabic (Saudi Arabia)</option><option value="ar_EG" >العربية (مصر) / Arabic (Egypt)</option><option value="fa_IR" >فارسی (ایران) / Persian (Iran)</option><option value="hi_IN" >हिन्दी (भारत) / Hindi (India)</option><option value="bn_BD" >বাংলা (বাংলাদেশ) / Bengali (Bangladesh)</option><option value="gu_IN" >ગુજરાતી (ભારત) / Gujarati (India)</option><option value="th_TH" >ไทย (ไทย) / Thai (Thailand)</option><option value="lo_LA" >ລາວ (ລາວ) / Lao (Laos)</option><option value="ka_GE" >ქართული (საქართველო) / Georgian (Georgia)</option><option value="km_KH" >ភាសាខ្មែរ (កម្ពុជា) / Khmer (Cambodia)</option><option value="zh_CN" >中文 (中国) / Chinese (China)</option><option value="zh_HK" >中文 (中華人民共和國香港特別行政區) / Chinese (Hong Kong SAR China)</option><option value="zh_TW" >中文 (台灣) / Chinese (Taiwan)</option><option value="ja_JP" >日本語 (日本) / Japanese (Japan)</option><option value="ko_KR" >한국어 (대한민국) / Korean (South Korea)</option></select></p>
+<p class="legality">
+    <a href="http://magento.com/resources/technical" id="footer_connect">Connect with the Magento Community</a><br/>
+    <img src="http://magento-codeception.aablett/skin/adminhtml/default/default/images/varien_logo.gif" class="v-middle" alt="" />&nbsp;&nbsp;
+    Magento&trade; is a trademark of Magento Inc.<br/>Copyright &copy; 2014 Magento Inc.</p>
+Magento ver. 1.9.0.1<script type="text/javascript">
+    $('footer_bug_tracking').target = 'Varien_External';
+    $('footer_connect').target = 'Varien_External';
+    function setInterfaceLanguage(evt){
+        var elem = Event.element(evt);
+        if(elem){
+            setLocation('http://magento-codeception.aablett/index.php/admin/index/changeLocale/key/4b55456e8c4197ef9c3bee9318b77b8f/locale/'+elem.value+'/uenc/aHR0cDovL21hZ2VudG8tY29kZWNlcHRpb24uYWFibGV0dC9pbmRleC5waHAvYWRtaW4vZGFzaGJvYXJkL2luZGV4L2tleS9mODYxYTkyNzhkMmExZDRjNjY1Mzg0ZTY4MzU0ZTgwNS8,');
+        }
+    }
+    Event.observe('interface_locale', 'change', setInterfaceLanguage)
+</script>
+        </div>
+    </div>
+        <div id="loading-mask" style="display:none">
+    <p class="loader" id="loading_mask_loader"><img src="http://magento-codeception.aablett/skin/adminhtml/default/default/images/ajax-loader-tr.gif" alt="Loading..."/><br/>Please wait...</p>
+</div>
+
+
+</body>
+</html>
